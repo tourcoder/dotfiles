@@ -1,12 +1,14 @@
 ## My dotfiles
 A backup of my dotfiles
 
-#### gitignore
+### Collection
 
-```
-curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/.gitignore -o .gitignore
-```
+- gitignore
 
-#### LICENSE
+  ```
+  curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/.gitignore -o .gitignore
+  ```
 
-MIT
+### LICENSE
+
+MIT, Copyright (C) 2018-present, Bin Hua
