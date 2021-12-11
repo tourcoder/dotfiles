@@ -1,0 +1,25 @@
+name: actions_build_docker_image_and_publish_to_ghcr
+on:
+  push:
+    branches: [ master ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1.6.0
+      - name: Login to Github Packages
+        uses: docker/login-action@v1.10.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_TOKEN }}
+      - name: Build image and GitHub Container Registry
+        uses: docker/build-push-action@v2.7.0
+        with:
+          context: ./
+          tags: |
+            ghcr.io/username/projectname/packagename:latest
+          push: ${{ github.ref == 'refs/heads/master' }}
