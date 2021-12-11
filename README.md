@@ -20,7 +20,7 @@ curl https://raw.githubusercontent.com/huabin/dotfiles/master/.dockerignore -o .
 **build docker image and publish to ghcr**
 
 ```
-curl https://raw.githubusercontent.com/huabin/dotfiles/master/.github/workflows/actions_build_docker_image_and_publish_to_ghcr.yml -o actions_build_docker_image_and_publish_to_ghcr.yml
+curl https://raw.githubusercontent.com/huabin/dotfiles/master/actions_build_docker_image_and_publish_to_ghcr.yml -o actions_build_docker_image_and_publish_to_ghcr.yml
 ```
   
 ### LICENSE
