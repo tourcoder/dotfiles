@@ -6,13 +6,13 @@ A backup of my dotfiles
 **gitignore**
 
 ```
-curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/.gitignore -o .gitignore
+curl https://raw.githubusercontent.com/huabin/dotfiles/master/.gitignore -o .gitignore
 ```
 
 **dockerignore**
 
 ```
-curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/.dockerignore -o .dockerignore
+curl https://raw.githubusercontent.com/huabin/dotfiles/master/.dockerignore -o .dockerignore
 ```
 
 ### GitHub Actions
@@ -20,7 +20,7 @@ curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/.dockerignore -
 **build docker image and publish to ghcr**
 
 ```
-curl https://raw.githubusercontent.com/tourcoder/dotfiles/master/actions_build_docker_image_and_publish_to_ghcr.yml -o actions_build_docker_image_and_publish_to_ghcr.yml
+curl https://raw.githubusercontent.com/huabin/dotfiles/master/actions_build_docker_image_and_publish_to_ghcr.yml -o actions_build_docker_image_and_publish_to_ghcr.yml
 ```
   
 ### LICENSE
